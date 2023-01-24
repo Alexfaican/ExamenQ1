@@ -20,13 +20,14 @@ export class Comp1Component implements OnInit {
   }
   Pagina2(){
     this.nav.navigate(['web'])
+    this.almacenar()
   }
   almacenar(){
-    this.nombre = localStorage.getItem("nombre".toString())
-    this.apellido = localStorage.getItem("apellido".toString())
-    this.direccion = localStorage.getItem("direccion".toString())
-    this.celular = localStorage.getItem("celular".toString())
-    this.edad = localStorage.getItem("edad".toString())
+    localStorage.setItem('nombre',this.nombre.toString())
+    localStorage.setItem('apellido',this.apellido.toString())
+    localStorage.setItem('direccion',this.direccion.toString())
+    localStorage.setItem('celular',this.celular.toString())
+    localStorage.setItem('edad',this.edad.toString())
   }
 }
 

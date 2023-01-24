@@ -18,10 +18,10 @@ export class Comp2Component implements OnInit {
     this.recuperar();
   }
 recuperar(){
-  this.nombre = localStorage.setItem("nombre", this.nombre)
-  this.apellido = localStorage.setItem("apellido", this.apellido)
-  this.direccion = localStorage.setItem("direccion", this.direccion)
-  this.celular = localStorage.setItem("celular", this.celular)
-  this.edad = localStorage.setItem("edad", this.edad)
+  this.nombre = localStorage.getItem('nombre')
+  this.apellido = localStorage.getItem('apellido')
+  this.direccion = localStorage.getItem('direccion')
+  this.celular = localStorage.getItem('celular')
+  this.edad = localStorage.getItem('edad')
 }
 }
