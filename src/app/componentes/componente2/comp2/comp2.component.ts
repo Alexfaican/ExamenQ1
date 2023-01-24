@@ -9,11 +9,11 @@ import { Router } from '@angular/router';
 export class Comp2Component implements OnInit {
 
   constructor(nav:Router) { }
-  nombre:any
-  apellido:any
-  direccion:any
-  celular:any
-  edad:any
+  nombre:String
+  apellido:String
+  direccion:String
+  celular:String
+  edad:String
   ngOnInit(): void {
     this.recuperar();
   }

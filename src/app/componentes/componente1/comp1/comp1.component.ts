@@ -10,11 +10,11 @@ import { Route, Router} from '@angular/router';
 export class Comp1Component implements OnInit {
 
   constructor(private nav:Router) {}
-  nombre:any
-  apellido:any
-  direccion:any
-  celular:any
-  edad:any
+  nombre:String
+  apellido:String
+  direccion:String
+  celular:String
+  edad:number
   ngOnInit(): void {
     localStorage.clear();
   }
