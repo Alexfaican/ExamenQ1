@@ -3,5 +3,5 @@
 <p>{{direccion}}</p><br>
 <p>{{celular}}</p><br>
 <p>{{edad}}</p><br>
-<p *ngIf= "edad "> Edad mayor a 18</p>
-<p *ngIf= "edad ">18</p></div>
+<p *ngIf= "edad < '18' "> Edad mayor a 18</p>
+<p *ngIf= "edad > '18' ">Edad menor a 18</p></div>
